@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
 
-export interface RestaurantListItemProps {
+export interface RestaurantListItemProps {    
     title: string;
     tags: string[];
     imageUrl: string;
@@ -24,21 +24,21 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: "column",
-        padding: '1em',
+        padding: 16,
         width: '100%',
     },
     image: {
         backgroundColor: 'green',
         width: '100%',
-        paddingTop: '56.25%', // 16:9 aspect ratio
+        aspectRatio: 2,
     },
     title: {
-        marginTop: '1em',
+        marginTop: 8,
         fontSize: 18,
         fontWeight: '800',
     },
     tag: {
-        marginTop: '0.5em',
+        marginTop: 8,
         fontWeight: "100"
     }
 })
